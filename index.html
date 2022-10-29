@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado Challenge</title>
+    <link rel="icon" href="icon.ICO">
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body>
+    <header>
+        <div class="caja-logo">
+            <img src="img/Logo.png" alt="">
+        </div>
+    </header>
+    <main>
+        <section id="sec-principal" class="cuerpo pri">
+            <button id="iniciar" class="btn_prin">Iniciar Juego</button>
+            <button id="agregar" class="btn_secu">Agregar Palabra</button>
+        </section>
+
+
+
+
+        <section id="sec-juego" class="cuerpo jue ocultar">
+            <div class="juego">
+                <div class="juego-flex">
+                    <div class="juego-flex-imagen">
+                        <canvas width="400" height="380"></canvas>
+                    
+                    </div>
+                    <p id="resultado" class="juego-flex-resultado"></p>
+                </div>
+                
+                <div  class="letra">
+                    <p id="siletras" class="siletra"> </p>
+                    <p id="noletras" class="noletra"> </p>
+                </div>
+            </div>
+            <div class="btns-abajo">
+                <button id="nuevo" class="btn_prin">Nuevo Juevo</button>
+                <button id="desistir" class="btn_secu">Desistir</button>
+            </div>
+        </section>
+
+
+
+
+        <section id="sec-agregar" class="cuerpo sec-agregar agr ocultar">
+            <form id="enviar" class="centrar">
+                <input id="entrada" type="text" class="entrada"  placeholder="Ingrese una palabra" minlength="8" required>
+            </form>
+            <div class="btns-abajo">
+                <div class="unidos">
+                    <p class="maximo">Máx. de 8 letras</p>
+                    <button  id="guardar" form="enviar" class="btn_prin">Guardar y empezar</button>
+                </div>
+                <button id="cancelar" class="btn_secu">Cancelar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="foot-text">Creado por <b class="negri">Agustin Diaz</b>.-</p>
+    </footer>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
