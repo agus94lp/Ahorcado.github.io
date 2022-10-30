@@ -1,4 +1,4 @@
-let palabras =  ["flamengo","brasileira","bebecita","meuuuudeusssss","ahhhhhhhlisto","brasil","argentina","enfermeria","mentirosa"];
+let palabras =  ["html","computadora","informatica","desarrollador","tecnologia","programas","algoritmo","datos","sistemas","javascript"];
 
 const btn_iniciar = document.getElementById("iniciar");
 const btn_agregar = document.getElementById("agregar");
@@ -118,18 +118,11 @@ window.addEventListener("keydown",(e)=>{
                 }
             }
             if (acierto==palabra.length){
-                resultado.innerHTML = "GANASTE BEBECITA";
-                if (palabra==="brasileira" || palabra==="brasil" || palabra==="bebecita"){
-                    document.querySelector(".jue").classList.add("bra");
-                }
-                if (palabra==="argentina" ){
-                    document.querySelector(".jue").classList.add("arg");
-                }
-                if (palabra==="mentirosa" || palabra==="ahhhhhhhlisto" || palabra==="meuuuudeusssss"){
-                    resultado.innerHTML = "Ganaste! te amo bebecita :D";
-                }
+                resultado.innerHTML = "GANASTE";
+                
                 juego=false;
             }
+
         }
     }  
 });
